@@ -1,0 +1,39 @@
+Practice Example 18: Implementing Bank Rules Using Interface
+Example 18: Interface, making a class implement methods of the interface.
+
+
+
+Let’s consider we are building a banking system where we handle both private and government banks.
+
+There are certain rules and regulations which banks need to follow like maintaining a certain minimum balance in a user's account, paying interest on their money deposited etc.
+
+To make the banks implement these rules, we will design an interface and make the Bank classes implement this interface.
+
+For example, let's say we want to impose a rule which asks banks to pay an interest.
+
+To implement this, we will add an interest_paid method to the BankRules interface and make the bank classes implement these interfaces.
+
+However, the private and government banks can decide on the amount of interest they would be willing to pay.
+
+The private bank might pay 5% and government banks may pay 7%.
+
+
+
+
+
+Create a new interface called BankRules which should have an abstract method titled interest_paid.
+
+Create a new class called Privatebank, it should have an attribute titled customer_name and a parameterised constructor which accepts customer_name as an argument.
+
+Create another class called Govtbankit, it should have an attribute titled customer_name and a parameterised constructor which accepts customer_name as an argument.
+
+Make both of the classes implement the BankRules interface.
+
+This way the classes need to implement the method “interest_paid”
+
+The interest paid method of the Privatebank should print a message stating “X is paid an interest of 5%”, where X is the customer name.
+
+The interest paid method of the Govtbank should print a message stating “X is paid an interest of 7%”, where X is the customer name.
+
+Create objects of both banks in the main.java and invoke the interest paid method on both objects.
+
